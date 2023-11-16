@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Lusi Kyebakutika",
+        "work": "unknown",
+        "topics": "sex work",
+        "suggestion": "THE WORD PROSTITUTE HAS CONFUSED US",
+        "lang": "Luganda",
+        "year": 1932,
+        "years_dec": "1930s",
+        "country": "Uganda",
+        "birth_place": "Bwayise",
+        "Coordinate_LAT": 0.3507779873,
+        "Coordinate_LONG": 32.55777198,
+        "color":"#edecb9",
+        "Source": "Amandina Lihamba , Fulata L . Moyo , M.M . Mulokozi, Naomi L. Shitemi, Saida Yahya-Othman(2007). Women writing africa: the eastern region. Feminist Press at the City University of New York."
+    },
+    {
+        "name": "Women are Human Beings (Z and G)",
+        "work": "sex worker",
+        "topics": "sex work",
+        "suggestion": "WOMEN ARE HUMAN BEINGS",
+        "lang": "Kiswahili",
+        "year": 1950,
+        "years_dec": "1950s",
+        "country": "Tanzania",
+        "birth_place": "Bukoba",
+        "Coordinate_LAT": -1.329931864,
+        "Coordinate_LONG": 31.80510892,
+        "color":"#edecb9",
+        "Source": "Amandina Lihamba , Fulata L . Moyo , M.M . Mulokozi, Naomi L. Shitemi, Saida Yahya-Othman(2007). Women writing africa: the eastern region. Feminist Press at the City University of New York."
+    }
+]

@@ -1,0 +1,16 @@
+export const data = [
+    {group:"topic", subgroup: "abolishment slavery", value: 2},
+    {group:"topic", subgroup: "anti-colonialism", value: 9},
+    {group:"topic", subgroup: "belief, spirituality, religion, cosmogony, ancestrality", value: 16},
+    {group:"topic", subgroup: "caring and loving", value: 7},
+    {group:"topic", subgroup: "education", value: 7},
+    {group:"topic", subgroup: "gender biases and traditional cultural norms", value: 28},
+    {group:"topic", subgroup: "gender justice", value: 7},
+    {group:"topic", subgroup: "gender-based violence", value: 6},
+    {group:"topic", subgroup: "inter-communal violence", value: 1},
+    {group:"topic", subgroup: "motherhood, sisterhood", value: 8},
+    {group:"topic", subgroup: "political participation", value: 7},
+    {group:"topic", subgroup: "reproductive right",value: 2},
+    {group:"topic", subgroup: "sex work", value: 2},
+    {group:"topic", subgroup: "traditional knowledge and customs",value: 10},
+]

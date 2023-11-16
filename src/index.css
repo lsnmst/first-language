@@ -1,16 +1,50 @@
 @font-face {
-  font-family: 'xanti-typewriter-variable';
-  src: 
-    url(https://fonts.adobe.com/fonts/xanti-typewriter-variable?vf-instance=Thin&vf-font-size=86&vf-font=Xanti-TypewriterVF-ExtraBold);
+  font-family: 'White';
+  src:
+    url('./font/Regular.woff') format('woff'),
+    url('./font/Medium.woff') format('woff'),
+    url('./font/Light.woff') format('woff');
 }
+
+@font-face {
+  font-family: 'Typewriter-RegularItalic';
+  src:
+    url('./font/Typewriter-RegularItalic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: "SuttonSignWritingLine";
+  src:
+    local('SuttonSignWritingLine'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src:
+    local('SuttonSignWritingFill'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src:
+    local('SuttonSignWritingOneD'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
+}
+
 
 body {
   margin: 0;
-  font-family: 'xanti-typewriter-variable', sans-serif !important;
-  font-variation-settings: 'wght' 100;
+  font-family: 'White', sans-serif !important;
+  font-style: normal !important;
+  font-weight: 200 !important;
+  line-height: 110% !important;
+  letter-spacing: normal !important;
+  color: #2d2727 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(192, 117, 111, 1);
+  background-color: rgba(245, 85, 138, 1);
   overflow: auto !important;
   overflow-y: scroll;
   overflow-x: hidden !important;
@@ -34,9 +68,9 @@ a:visited {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(192, 117, 111, 1);
-  -webkit-box-shadow: inset 0 0 6px rgba(192, 117, 111, 1);
-  background-color: #C0756F;
+  box-shadow: inset 0 0 6px rgba(245, 85, 138, 1);
+  -webkit-box-shadow: inset 0 0 6px rgba(245, 85, 138, 1);
+  background-color: rgba(245, 85, 138, 1);
 }
 
 ::-webkit-scrollbar {
@@ -50,8 +84,8 @@ a:visited {
 }
 
 .dot>div>div>div {
-  width: 5px !important;
-  height: 5px !important;
+  width: 3px !important;
+  height: 3px !important;
   background-color: rgb(83, 80, 251)ortant;
 }
 
@@ -68,7 +102,7 @@ a:visited {
 }
 
 .mapboxgl-map {
-  border: 1px solid rgba(255, 233, 91, 1);
+  border: 1px solid rgba(255, 233, 91, .6);
   padding: 0.2em;
   /* background: rgb(39, 38, 38); */
   max-height: 100vh;
@@ -98,27 +132,6 @@ a:visited {
   z-index: 998 !important;
 }
 
-@font-face {
-  font-family: "SuttonSignWritingLine";
-  src:
-    local('SuttonSignWritingLine'),
-    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "SuttonSignWritingFill";
-  src:
-    local('SuttonSignWritingFill'),
-    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: "SuttonSignWritingOneD";
-  src:
-    local('SuttonSignWritingOneD'),
-    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
-}
-
 .title {
   font-family: 'SuttonSignWritingLine', 'VT323', monospace !important;
   -webkit-font-smoothing: antialiased;
@@ -141,16 +154,111 @@ a:visited {
 }
 
 .signL {
-  font-family: 'SuttonSignWritingLine', 'VT323', monospace !important;
+  font-family: 'White', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
   text-align: center;
-  border-width: 5px;
-  border-style: solid;
-  border-radius: 10px;
+  /* border-width: 5px;
+  border-style: solid; */
+  border-radius: 6px;
   padding: 5px;
-  width: fit-content;
-  height: fit-content;
+  width: 180px;
+  height: 60px;
+}
+
+.signM {
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  width: 80% !important;
+}
+
+.logo {
+  background: url("../public/logo512.png") no-repeat;
+  background-repeat: no-repeat;
+  background-size: 42px 42px;
+  width: 42px;
+  height: 42px;
+  position: fixed;
+  margin-top: 3%;
+  margin-left: 95%;
+  z-index: 1;
+}
+
+.sentence {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500 !important;
+  font-size: 1.8em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  padding-bottom: 10px !important;
+}
+
+.sentenceh2 {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400 !important;
+  font-size: 2.6em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  padding-bottom: 10px !important;
+}
+
+.title {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400 !important;
+  font-size: 8em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  position: absolute;
+  z-index: 998;
+  cursor: none;
+}
+
+.titleh2 {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400 !important;
+  font-size: 4em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  position: absolute;
+  z-index: 998;
+  cursor: none;
+  margin-top: 15% !important;
+  text-align: right;
+}
+
+.notemap {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: uppercase;
+  font-weight: 100 !important;
+  font-size: 0.08em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(114, 114, 114);
+  text-shadow:
+    10px 10px rgba(146, 145, 145, 0.1) !important;
+  padding-bottom: 20px !important;
+  /* text-align: center; */
+  animation: opacity 2s ease-in-out infinite alternate;
+  opacity: 1;
+  position: absolute;
+  z-index: 998;
+  padding: 10px;
 }
 
 .card {
@@ -159,34 +267,36 @@ a:visited {
 }
 
 .cardTitle {
-  font-family: 'VT323', monospace !important;
+  font-family: 'Typewriter-RegularItalic', monospace !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
   font-size: 3em;
   line-height: 0.8;
   letter-spacing: 1px;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .cardsubTitle {
-  font-family: 'VT323', monospace !important;
+  font-family: 'White', sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 0.55em;
-  line-height: 0.8;
-  letter-spacing: 1px;
+  font-size: 0.45em;
+  line-height: 1.2;
+  /* letter-spacing: 1px; */
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .cardContent {
-  font-family: 'Space Mono', monospace !important;
-  font-weight: 800;
+  /* font-family: 'Space Mono', monospace !important; */
+  font-weight: 200 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1em;
-  line-height: 1.25em;
+  font-size: 2em;
+  line-height: 140%;
   letter-spacing: 1px;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -194,11 +304,11 @@ a:visited {
 }
 
 .infoContent {
-  font-family: 'Space Mono', monospace !important;
-  font-weight: 800;
+  /* font-family: 'Space Mono', monospace !important; */
+  font-weight: 200 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1em;
+  font-size: 1.1em;
   line-height: 1.1em;
   letter-spacing: 1px;
   margin-top: 5px;
@@ -271,7 +381,7 @@ a:visited {
   height: 100% !important;
   overflow-y: auto !important;
   touch-action: pan-y !important;
-  background-color: white !important;
+  background-color: rgba(245, 85, 138, 1) !important;
 }
 
 .mapboxgl-popup-tip {
@@ -282,18 +392,14 @@ a:visited {
   transform: none !important;
   width: 500px !important;
   max-width: 600px !important;
-  height: 80vh;
+  height: auto;
   top: 2vh;
   left: 2vw;
   z-index: 999;
-  background-color: hotpink !important;
   box-shadow: none !important;
-  --mask:
-    linear-gradient(#000 0 0) 50%/calc(100% - 9.25px) calc(100% - 9.25px) no-repeat,
-    radial-gradient(farthest-side, #000 98%, #0000) 0 0/10px 10px round;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
-  border: 10px solid rgb(39, 38, 38) !important;
+  border-radius: 5px !important;
+  padding: 8px;
+  border: 1px solid rgba(255, 233, 91, 1);
 }
 
 .mapboxgl-popup-close-button {

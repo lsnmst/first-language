@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Bwanikwa",
+    "work": "authoress",
+    "topics": "abolishment slavery",
+    "suggestion": "TEN TIMES A SLAVE",
+    "lang": "Chiluba",
+    "year": 1895,
+    "years_dec": "1890s",
+    "country": "Zambia",
+    "birth_place": "Northeastern Rhodesia",
+    "Coordinate_LAT": -10.38241201,
+    "Coordinate_LONG": 29.10202956,
+    "color":"#78ff9a",
+    "Source": "M. J. Daymond, Dorothy Driver, Sheila Meintjes, Leloba Molema, Chiedza Musengezi, Margie Orford, Nobantu Rasebotsa (2003). Women writing africa: The Southern Region. The Feminist Press at the City University of New York."
+  },
+  {
+    "name": "Nditi Ba",
+    "work": "poetess",
+    "topics": "abolishment slavery",
+    "suggestion": "MAKORI, OR THE TRIUMPH OF SLAVES",
+    "lang": "Fulfulde",
+    "year": 1998,
+    "years_dec": "1990s",
+    "country": "Senegal",
+    "birth_place": "Bogo, Fuuta kingdom",
+    "Coordinate_LAT": 16.65891638,
+    "Coordinate_LONG": -14.96760633,
+    "color":"#78ff9a",
+    "Source": "Esi Sutherland-Addy, Aminata Diaw (2005). Women writing africa: West Africa and the sahel. Feminist Press at the City University of New York."
+  }
+]

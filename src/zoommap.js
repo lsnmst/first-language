@@ -1,18 +1,26 @@
 import logo from './logo.svg';
 import * as React from "react";
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { render } from "react-dom";
 import './App.css';
-import COSMO from './data/cosmo.json';
-import CONTRAPTION from './data/contraption.json';
-import CARTESIAN from './data/cartesian.json';
-import SELF from './data/self.json';
-import { Pincategorycosmo, Pincategorycontrap, Pincategorycartes, Pincategoryself, Pincategorygen } from './pin/pins.tsx';
+import BELIEF from './data/belief.json';
+import BIASES from './data/biases.json';
+import CARING from './data/caring.json';
+import COLONIALISM from './data/colonialism.json';
+import COMMUNAL from './data/communal.json';
+import EDU from './data/education.json';
+import JUSTICE from './data/justice.json';
+import MOTHER from './data/motherhood.json';
+import POLITIC from './data/politic.json';
+import REPRO from './data/reproductive.json';
+import SEX from './data/sex.json';
+import SLAVERY from './data/slavery.json';
+import TRAD from './data/traditional.json';
+import VIOLENCE from './data/violence.json';
+import { Pincategoryviolence, Pincategorytrad, Pincategoryslavery, Pincategorysex, Pincategoryrepro, Pincategorymother, Pincategoryjustice, Pincategoryedu, Pincategorycommunal, Pincategorycolonialism, Pincategorycaring, Pincategorybelief, Pincategorybiases, Pincategorypolitic } from './pin/pins.tsx';
 
 
 import Map, { Source, Layer, FullscreenControl, Marker, Popup, FlyToInterpolator, NavigationControl } from "react-map-gl";
 import mapboxgl from 'mapbox-gl';
-import ReactMapGL from 'react-map-gl';
 import "mapbox-gl/dist/mapbox-gl.css";
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -28,88 +36,308 @@ function Zoommap() {
 
   const [popupInfo, setPopupInfo] = useState(null);
 
-  const contraption = useMemo(
+  const belief = useMemo(
     () =>
-      CONTRAPTION.map((city, index) => (
+      BELIEF.map((name, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
           anchor="center"
           onClick={e => {
             // If we let the click event propagates to the map, it will immediately close the popup
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
-            setPopupInfo(city);
+            setPopupInfo(name);
           }}
         >
-          <Pincategorycontrap />
+          <Pincategorybelief />
 
         </Marker>
       )),
     []
   );
 
-  const cosmo = useMemo(
+  const biases = useMemo(
     () =>
-      COSMO.map((city, index) => (
+      BIASES.map((name, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
           anchor="center"
           onClick={e => {
             // If we let the click event propagates to the map, it will immediately close the popup
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
-            setPopupInfo(city);
+            setPopupInfo(name);
           }}
         >
-          <Pincategorycosmo />
+          <Pincategorybiases />
 
         </Marker>
       )),
     []
   );
 
-  const cartesian = useMemo(
+  const caring = useMemo(
     () =>
-      CARTESIAN.map((city, index) => (
+      CARING.map((name, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
           anchor="center"
           onClick={e => {
             // If we let the click event propagates to the map, it will immediately close the popup
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
-            setPopupInfo(city);
+            setPopupInfo(name);
           }}
         >
-          <Pincategorycartes />
+          <Pincategorycaring />
 
         </Marker>
       )),
     []
   );
 
-  const self = useMemo(
+  const colonialism = useMemo(
     () =>
-      SELF.map((city, index) => (
+      COLONIALISM.map((name, index) => (
         <Marker
           key={`marker-${index}`}
-          longitude={city.longitude}
-          latitude={city.latitude}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
           anchor="center"
           onClick={e => {
             // If we let the click event propagates to the map, it will immediately close the popup
             // with `closeOnClick: true`
             e.originalEvent.stopPropagation();
-            setPopupInfo(city);
+            setPopupInfo(name);
           }}
         >
-          <Pincategoryself />
+          <Pincategorycolonialism />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const communal = useMemo(
+    () =>
+      COMMUNAL.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategorycommunal />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const edu = useMemo(
+    () =>
+      EDU.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategoryedu />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const justice = useMemo(
+    () =>
+      JUSTICE.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategoryjustice />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const mother = useMemo(
+    () =>
+      MOTHER.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategorymother />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const politic = useMemo(
+    () =>
+      POLITIC.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategorypolitic />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const repro = useMemo(
+    () =>
+      REPRO.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategoryrepro />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const sex = useMemo(
+    () =>
+      SEX.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategorysex />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const slavery = useMemo(
+    () =>
+      SLAVERY.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategoryslavery />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const trad = useMemo(
+    () =>
+      TRAD.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategorytrad />
+
+        </Marker>
+      )),
+    []
+  );
+
+  const violence = useMemo(
+    () =>
+      VIOLENCE.map((name, index) => (
+        <Marker
+          key={`marker-${index}`}
+          longitude={name.Coordinate_LONG}
+          latitude={name.Coordinate_LAT}
+          anchor="center"
+          onClick={e => {
+            // If we let the click event propagates to the map, it will immediately close the popup
+            // with `closeOnClick: true`
+            e.originalEvent.stopPropagation();
+            setPopupInfo(name);
+          }}
+        >
+          <Pincategoryviolence/>
 
         </Marker>
       )),
@@ -119,7 +347,7 @@ function Zoommap() {
   return (
 
     <>
-    {/* <div className="welcome">
+      {/* <div className="welcome">
       <svg width="800" height="600" stroke="white" strokeWidth="1" fill="#5c5769" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
         <defs>
           <path id="intermediate" d="M 50 50 C 50 250 200 500 400 500 C 600 500 750 250 750 50 " />
@@ -132,8 +360,8 @@ function Zoommap() {
 
       <Map
         initialViewState={{
-          latitude: 0,
-          longitude: -18,
+          latitude: -0.36,
+          longitude: 23.44,
           zoom: 1.8
         }}
         projection={"globe"}
@@ -141,62 +369,56 @@ function Zoommap() {
         mapboxAccessToken="pk.eyJ1IjoiY29tdW5pLWRhZG9zIiwiYSI6ImNqdWxlaHRqbjIycjE0M3BpamY3a3c4aWUifQ.HGizp_QckKQVjAZnnw8qAg"
         // onClick={onClick}
         // ref={mapRef}
-        fog={{ "horizon-blend": 0.5, "star-intensity": 0.15, "range": [0.8, 8], color: "#ffe95b", "space-color": "#ff69b4", "high-color": "#000000" }}
+        fog={{ "horizon-blend": 0.5, "star-intensity": 0.15, "range": [0.8, 8], color: "#ff5454", "space-color": "#ff69b4", "high-color": "#000000" }}
         light={{ "anchor": "viewport", "color": "white", "intensity": 0.4 }}
         style={{ width: "null", height: "96vh" }}
       >
 
-        <FullscreenControl position="top-right" />
+        <FullscreenControl position="bottom-right" />
 
-
-        {cosmo}
-
-        {contraption}
-
-        {cartesian}
-
-        {self}
+        {belief}
+        {biases}
+        {caring}
+        {colonialism}
+        {communal}
+        {edu}
+        {justice}
+        {mother}
+        {politic}
+        {repro}
+        {sex}
+        {slavery}
+        {trad}
+        {violence}
 
         {popupInfo && (
           <Popup
             anchor="center"
             focusAfterOpen="true"
-            longitude={Number(popupInfo.longitude)}
-            latitude={Number(popupInfo.latitude)}
+            longitude={Number(popupInfo.Coordinate_LONG)}
+            latitude={Number(popupInfo.Coordinate_LAT)}
             onClose={() => setPopupInfo(null)}
           >
 
             <div className='card'>
 
-              <Typography id="modal-modal-title" variant="h6" component="h2">
-                <div className="signL" style={{ borderColor: popupInfo.color }} >
-                  {popupInfo.sign1L} <br />
-                  {popupInfo.sign2L} <br />
-                  {popupInfo.sign3L} <br />
-                  <div style={{ lineHeight: 0.9 }} dangerouslySetInnerHTML={{ __html: popupInfo.category }} />
+              <Typography id="modal-modal-title">
+                <div className="signL" style={{ backgroundColor: popupInfo.color }} >
+                  <div className="signM" > {popupInfo.topics} </div>
                 </div>
               </Typography>
 
               <div className="cardTitle">
-                <div dangerouslySetInnerHTML={{ __html: popupInfo.city }} /> <br />
+                <div dangerouslySetInnerHTML={{ __html: popupInfo.name }} /> <br />
                 <Divider light />
-                <div className="cardsubTitle" >{popupInfo.state}</div>
+                <div className="cardsubTitle" >{popupInfo.birth_place + ", " + popupInfo.country}</div>
               </div>
-
-              <div>
-                <img style={{ position: "relative", top: "20px", bottom: "20px" }} width="100%" src={popupInfo.imageCover} />
-                <img style={{ position: "relative", top: "20px", bottom: "20px" }} width="100%" src={popupInfo.image} />
-                <div className="infoContent" style={{ position: "relative", top: "10px" }}>SOURCE : <span dangerouslySetInnerHTML={{ __html: popupInfo.description }} /></div>
-              </div>
-
-              <iframe controls width={"99%"} style={{ position: "relative", top: "10px" }} height={popupInfo.ratioCover} src={popupInfo.videoCover} frameBorder="0" allow=" encrypted-media; picture-in-picture" allowFullScreen />
 
               <Divider light />
-              <div className="infoContent">LANGUAGE : {popupInfo.language}</div>
-              <div className="infoContent">PARTICIPATION LEVEL : {popupInfo.participationLevel}</div>
-              <div className="infoContent">DELIVERABLES : <p dangerouslySetInnerHTML={{ __html: popupInfo.deliverables }} /></div>
-              <div className="infoContent">SCALE : {popupInfo.scale}</div>
-              <div className="infoContent">DATA AND INFORMATION RIGHTS OVER CULTURE, CUSTOMARY LAW, ARTS AND CRAFTS, HERITAGE, BIODIVERSITY, FOLKLORE, AND NATIVE TITLE : {popupInfo.right}</div>
+              <div className="infoContent">LANGUAGE :<br /> <b>{popupInfo.lang}</b></div>
+              <div className="infoContent">SUGGESTED READING (title translated in English):<br /> <b>{popupInfo.suggestion}</b></div>
+              <div className="infoContent">YEAR :<br />  <b>{popupInfo.year}</b></div>
+              <div className="infoContent">BOOK, ARTICLE, MANUSCRIPT, TRANSCRIPT, SOURCE :<br /> <b>{popupInfo.Source}</b></div>
 
             </div>
           </Popup>
@@ -211,7 +433,7 @@ function Zoommap() {
           󱽯 <sub>󻦶</sub>
         </div>
       </div> */}
-      </>
+    </>
   );
 }
 
