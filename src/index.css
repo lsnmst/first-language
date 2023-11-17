@@ -225,6 +225,16 @@ video{
   padding-bottom: 10px !important;
 }
 
+.sentencesans {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 300 !important;
+  font-size: 0.8em !important;
+  letter-spacing: 5px !important;
+  line-height: 1.4em !important;
+  padding-bottom: 10px !important;
+}
+
 .sentencetitle {
   font-family: 'Typewriter-RegularItalic', monospace !important;
   -webkit-font-smoothing: antialiased;
@@ -529,5 +539,11 @@ p.MuiTypography-body1 {
 
   #hsbar_text {
     font-size: 10px !important;
+  }
+
+  .sentencesans {
+    font-size: 9px !important;
+    letter-spacing: 2px !important;
+    line-height: 1.5em !important;  
   }
 }

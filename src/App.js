@@ -61,13 +61,23 @@ const App = () => {
               <BarChartNoText />
             </CardContent>
           </FullpageSection>
+          
+          <FullpageSection style={{
+            height: '40vh',
+          }}>
+            <CardContent sx={{ maxWidth: 600 }}>
+              <Typography component='div' className="sentencesans" sx={{ mt: 10 }}>This collection takes its title from the Women Writing Africa series, published by the Feminist Press of the City University of New York between the years 2003 and 2007, and described as a "cultural reconstruction project". Through the publication of a series of regional anthologies, each collecting oral and written narratives and a variety of historical and literary texts, the project has made visible the oral and written literary expression of African women. The definition of "writing" has been broadened to include songs, praise poems and significant oral texts, as well as fiction, poetry, letters, diaries, books and historical and legal documents. Through this online collection, we reaffirm, as in the aforementioned book series, the goal of amplifying the works of women and their stories.
+              </Typography>
+            </CardContent>
+          </FullpageSection>
+
 
           <FullpageSection style={{
             height: '40vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="colorized" sx={{ mt: 10 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance.<br />See, my tongue is a traumatized survivor…"<br /><br /><br />✎ HAFSAT ABDULLAHI
-               </Typography>
+              </Typography>
             </CardContent>
           </FullpageSection>
 
@@ -96,13 +106,6 @@ const App = () => {
           }}>
             <Zoommap />
           </FullpageSection>
-
-          <FullpageSection style={{
-            height: '20vh',
-            padding: '1em',
-          }}>
-          </FullpageSection>
-
 
         </FullPageSections>
 
