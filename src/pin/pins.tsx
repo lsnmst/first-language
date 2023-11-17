@@ -9,7 +9,7 @@ c0-2.8,2.3-5.1,5.1-5.1s5.1,2.3,5.1,5.1V402.9z`;
 
 const pinStylecontrap = {
   cursor: 'pointer',
-  fill: '#ffff5e',
+  fill: '#d96242',
   stroke: 'none'
 };
 
@@ -24,7 +24,7 @@ export function Pincategorybelief({size = 18}) {
 
 const pinStylebiases = {
   cursor: 'pointer',
-  fill: '#5e5eff',
+  fill: '#d24d55',
   stroke: 'none'
 };
 
@@ -39,7 +39,7 @@ export function Pincategorybiases({size = 18}) {
 
 const pinStylecaring = {
   cursor: 'pointer',
-  fill: '#bdd54e',
+  fill: '#a13a34',
   stroke: 'none'
 };
 
@@ -54,7 +54,7 @@ export function Pincategorycaring({size = 18}) {
 
 const pinStylecolonialism = {
   cursor: 'pointer',
-  fill: '#c3a1c9',
+  fill: '#f9ab47',
   stroke: 'none'
 };
 
@@ -68,7 +68,7 @@ export function Pincategorycolonialism({size = 18}) {
 
 const pinStylecommunal = {
   cursor: 'pointer',
-  fill: '#77a37e',
+  fill: '#aecfd1',
   stroke: 'none'
 };
 
@@ -82,7 +82,7 @@ export function Pincategorycommunal({size = 18}) {
 
 const pinStyleedu = {
   cursor: 'pointer',
-  fill: '#ff815e',
+  fill: '#f8a205',
   stroke: 'none'
 };
 
@@ -96,7 +96,7 @@ export function Pincategoryedu({size = 18}) {
 
 const pinStylejustice = {
   cursor: 'pointer',
-  fill: '#f7d288',
+  fill: '#fe9c37',
   stroke: 'none'
 };
 
@@ -110,7 +110,7 @@ export function Pincategoryjustice({size = 18}) {
 
 const pinStylemother = {
   cursor: 'pointer',
-  fill: '#8ed1ed',
+  fill: '#f56727',
   stroke: 'none'
 };
 
@@ -124,7 +124,7 @@ export function Pincategorymother({size = 18}) {
 
 const pinStylepolitic = {
   cursor: 'pointer',
-  fill: '#e396aa',
+  fill: '#7c241b',
   stroke: 'none'
 };
 
@@ -138,7 +138,7 @@ export function Pincategorypolitic({size = 18}) {
 
 const pinStylerepro = {
   cursor: 'pointer',
-  fill: '#a2e8d4',
+  fill: '#5a838f',
   stroke: 'none'
 };
 
@@ -152,7 +152,7 @@ export function Pincategoryrepro({size = 18}) {
 
 const pinStylesex = {
   cursor: 'pointer',
-  fill: '#edecb9',
+  fill: '#3b97b6',
   stroke: 'none'
 };
 
@@ -166,7 +166,7 @@ export function Pincategorysex({size = 18}) {
 
 const pinStyleslavery = {
   cursor: 'pointer',
-  fill: '#78ff9a',
+  fill: '#ccdfec',
   stroke: 'none'
 };
 
@@ -180,7 +180,7 @@ export function Pincategoryslavery({size = 18}) {
 
 const pinStylestrad = {
   cursor: 'pointer',
-  fill: '#ff78db',
+  fill: '#825a8f',
   stroke: 'none'
 };
 
@@ -194,7 +194,7 @@ export function Pincategorytrad({size = 18}) {
 
 const pinStyleviolence = {
   cursor: 'pointer',
-  fill: '#9898ed',
+  fill: '#da6026',
   stroke: 'none'
 };
 

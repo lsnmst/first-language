@@ -41,10 +41,10 @@ body {
   font-weight: 200 !important;
   line-height: 110% !important;
   letter-spacing: normal !important;
-  color: #2d2727 !important;
+  color: white!important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(245, 85, 138, 1);
+  background-color: #2d2727; 
   overflow: auto !important;
   overflow-y: scroll;
   overflow-x: hidden !important;
@@ -68,9 +68,9 @@ a:visited {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(245, 85, 138, 1);
-  -webkit-box-shadow: inset 0 0 6px rgba(245, 85, 138, 1);
-  background-color: rgba(245, 85, 138, 1);
+  box-shadow: inset 0 0 6px #2d2727; ;
+  -webkit-box-shadow: inset 0 0 6px #2d2727; ;
+  background-color: #2d2727; ;
 }
 
 ::-webkit-scrollbar {
@@ -79,18 +79,43 @@ a:visited {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(39, 38, 38);
-  border: 1px solid rgb(39, 38, 38);
+  background-color: white;
+  border: 1px solid white;
 }
 
 .dot>div>div>div {
-  width: 3px !important;
-  height: 3px !important;
-  background-color: rgb(83, 80, 251)ortant;
+  width: 2px !important;
+  height: 2px !important;
+  background-color: white !important;
 }
 
 .dot>div {
   z-index: 999 !important;
+}
+
+#hsbar_text:hover{
+  font-size: 16px !important;
+}
+
+#hsbar>g:hover{
+  -ms-transform: translate(0, 20%);
+  transform: translate(0, 20%);
+}
+
+#hsbar>g>text{
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+#hsbar_text{
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  font-size: 12px !important;
+  font-weight: 500 !important;
+}
+
+video{
+  background-color: #2d2727 !important;
 }
 
 .mapboxgl-ctrl-attrib-inner {
@@ -111,7 +136,7 @@ a:visited {
 }
 
 .mapboxgl-ctrl button.mapboxgl-ctrl-fullscreen .mapboxgl-ctrl-icon {
-  background-color: #C0756F;
+  background-color: #a13a34;
 }
 
 .welcome {
@@ -200,12 +225,43 @@ a:visited {
   padding-bottom: 10px !important;
 }
 
+.sentencetitle {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400 !important;
+  font-size: 3.6em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  padding-bottom: 10px !important;
+}
+
+.sentencetitleback {
+  background: url( "../public/cover.svg" ) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 8vw;
+  background-attachment: fixed;
+  background-position: bottom left;
+
+}
+
 .sentenceh2 {
   font-family: 'Typewriter-RegularItalic', monospace !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-weight: 400 !important;
   font-size: 2.6em !important;
+  letter-spacing: 5px !important;
+  line-height: 1em !important;
+  padding-bottom: 10px !important;
+}
+
+.colorized {
+  font-family: 'Typewriter-RegularItalic', monospace !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 500 !important;
+  font-size: 1.8em !important;
   letter-spacing: 5px !important;
   line-height: 1em !important;
   padding-bottom: 10px !important;
@@ -308,7 +364,7 @@ a:visited {
   font-weight: 200 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.1em;
   letter-spacing: 1px;
   margin-top: 5px;
@@ -381,7 +437,8 @@ a:visited {
   height: 100% !important;
   overflow-y: auto !important;
   touch-action: pan-y !important;
-  background-color: rgba(245, 85, 138, 1) !important;
+  background-color: white!important;
+  color: #2d2727;
 }
 
 .mapboxgl-popup-tip {
@@ -399,7 +456,7 @@ a:visited {
   box-shadow: none !important;
   border-radius: 5px !important;
   padding: 8px;
-  border: 1px solid rgba(255, 233, 91, 1);
+  border: 1px solid white;
 }
 
 .mapboxgl-popup-close-button {
@@ -463,5 +520,14 @@ p.MuiTypography-body1 {
   .mapboxgl-popup.mapboxgl-popup-anchor-center {
     width: 800px !important;
     max-width: 90% !important;
+  }
+
+  .colorized {
+    font-size: 1em !important;
+    letter-spacing: 1px !important;
+  }
+
+  #hsbar_text {
+    font-size: 10px !important;
   }
 }

@@ -6,12 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
-import Snackbar from '@mui/material/Snackbar';
 import CloseIcon from '@mui/icons-material/Close';
 
 import Zoommap from './zoommap';
-
-import { BarplotStackedHorizontalDemo } from './bar.tsx';
+import { Colorized } from './bar.js';
+import BarChart from './barplot.js';
+import BarChartNoText from './barnotext.js';
+import ReactPlayer from 'react-player';
 
 const App = () => {
 
@@ -52,22 +53,42 @@ const App = () => {
 
         <FullPageSections>
 
-          <FullpageSection className="trecentocinque" style={{
-            height: '85vh',
-          }}>
-            <CardContent  sx={{ maxWidth: 800 }}>
-            <Typography component='div' className="sentence" sx={{ mt: 2 }}>⦿ Nilce</Typography>
-            <Typography component='div' className="sentenceh2" sx={{ mt: 2 }}>“The language of the women writing Africa ”<br /><br /></Typography>
-            </CardContent>
-          </FullpageSection>
-          
-
-          <FullpageSection style={{
+          <FullpageSection className="sentencetitleback" style={{
             height: '100vh',
           }}>
-            <BarplotStackedHorizontalDemo />
+            <CardContent sx={{ maxWidth: 800 }}>
+              <Typography component='div' className="sentencetitle" sx={{ mt: 10 }}>THE FIRST LANGUAGE OF THE WOMEN WRITING AFRICA</Typography>
+              <BarChartNoText />
+            </CardContent>
           </FullpageSection>
 
+          <FullpageSection style={{
+            height: '40vh',
+          }}>
+            <CardContent sx={{ maxWidth: 800 }}>
+              <Typography component='div' className="colorized" sx={{ mt: 10 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance.<br />See, my tongue is a traumatized survivor…"<br /><br /><br />✎ HAFSAT ABDULLAHI
+               </Typography>
+            </CardContent>
+          </FullpageSection>
+
+          <FullpageSection style={{
+            backgroundColor: 'rgba(252, 250, 247, 1)',
+            height: '70vh',
+          }}>
+            <ReactPlayer width='100%' height='100%' controls url="https://www.alessandromusetta.com/geo/tiles/first-language/Hafsat_Abdullahi.mp4" />
+          </FullpageSection>
+
+          <FullpageSection style={{
+            height: '70vh',
+          }}>
+            <Colorized />
+          </FullpageSection>
+
+          <FullpageSection style={{
+            height: '20vh',
+          }}>
+            <BarChart />
+          </FullpageSection>
 
           <FullpageSection style={{
             height: '100vh',

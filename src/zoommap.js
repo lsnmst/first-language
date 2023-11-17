@@ -369,7 +369,7 @@ function Zoommap() {
         mapboxAccessToken="pk.eyJ1IjoiY29tdW5pLWRhZG9zIiwiYSI6ImNqdWxlaHRqbjIycjE0M3BpamY3a3c4aWUifQ.HGizp_QckKQVjAZnnw8qAg"
         // onClick={onClick}
         // ref={mapRef}
-        fog={{ "horizon-blend": 0.5, "star-intensity": 0.15, "range": [0.8, 8], color: "#ff5454", "space-color": "#ff69b4", "high-color": "#000000" }}
+        fog={{ "horizon-blend": 0.2, "star-intensity": 0.15, "range": [0.8, 8], color: "#da6026", "space-color": "#000000", "high-color": "#000000" }}
         light={{ "anchor": "viewport", "color": "white", "intensity": 0.4 }}
         style={{ width: "null", height: "96vh" }}
       >
@@ -403,7 +403,7 @@ function Zoommap() {
             <div className='card'>
 
               <Typography id="modal-modal-title">
-                <div className="signL" style={{ backgroundColor: popupInfo.color }} >
+                <div className="signL" style={{ borderColor: popupInfo.color,  borderStyle: "solid", borderWidth: 6, color: "ffffff"}} >
                   <div className="signM" > {popupInfo.topics} </div>
                 </div>
               </Typography>
