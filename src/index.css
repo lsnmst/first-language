@@ -84,8 +84,8 @@ a:visited {
 }
 
 .dot>div>div>div {
-  width: 2px !important;
-  height: 2px !important;
+  width: 1px !important;
+  height: 1px !important;
   background-color: white !important;
 }
 
@@ -228,10 +228,10 @@ video{
 .sentencesans {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 300 !important;
+  font-weight: 200 !important;
   font-size: 0.8em !important;
-  letter-spacing: 5px !important;
-  line-height: 1.4em !important;
+  letter-spacing: 3px !important;
+  line-height: 1.5em !important;
   padding-bottom: 10px !important;
 }
 
@@ -249,7 +249,7 @@ video{
 .sentencetitleback {
   background: url( "../public/cover.svg" ) no-repeat;
   background-repeat: no-repeat;
-  background-size: 8vw;
+  background-size: 7vw;
   background-attachment: fixed;
   background-position: bottom left;
 
@@ -275,6 +275,14 @@ video{
   letter-spacing: 5px !important;
   line-height: 1em !important;
   padding-bottom: 10px !important;
+}
+
+.africalang {
+  background: url( "../public/africa.svg" ) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 40vw;
+  background-attachment: fixed;
+  background-position: center center;
 }
 
 .title {
@@ -544,6 +552,18 @@ p.MuiTypography-body1 {
   .sentencesans {
     font-size: 9px !important;
     letter-spacing: 2px !important;
-    line-height: 1.5em !important;  
+    line-height: 1.4em !important;  
+  }
+
+  .sentencetitle{
+    font-size: 2em !important;
+  }
+
+  .sentencetitleback{
+    background-size: 15vw;
+  }
+
+  .africalang {
+    background-size: 80vw;
   }
 }

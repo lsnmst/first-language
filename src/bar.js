@@ -19,7 +19,7 @@ export const Colorized = ({   }) => {
              We have collected <CountUp
                 start={1}
                 end={112}
-                duration={10} /> texts, from the 18th century to the year 2005, covering {" "}
+                duration={8} /> texts, from the 18th century to the year 2007, covering {" "}
               <span style={{ textShadow:"2px 2px rgba(39, 38, 38, .7)" , color: COLORS[0] }}>
                 abolishment of slavery
               </span>
