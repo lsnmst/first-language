@@ -73,23 +73,23 @@ const App = () => {
             </CardContent>
           </FullpageSection>
 
-          <FullpageSection className="sentencetitleback" style={{
+          {/* <FullpageSection className="sentencetitleback" style={{
             height: '100vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="sentencetitle" sx={{ mt: 10 }}>STOP VIOLENCE IN THE CLASSROOMS</Typography>
               <BarChartNoText />
             </CardContent>
-          </FullpageSection>
+          </FullpageSection> */}
 
           <FullpageSection style={{
-            height: '70vh',
+            height: '100vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="colorized" sx={{ mt: 10 }}>"Berlin of 1884 was effected through the sword and the bullet. But the night of the sword and the .bullet was followed by the morning of the chalk and 'the blackboard. The physical violence of the battlefield was followed by the psychological violence of the' classroom"<br /><br /><br />✎ NGŨGĨ WA THIONG'O <sup>ꖁ</sup> </Typography>
               <Typography component='div' className="sentencesans" sx={{ mt: 8 }}><sup>ꖁ</sup> Decolonising the Mind. The Politics of Language in African Literature (1981)</Typography>
-              <Typography component='div' className="sentencesans" sx={{ mt: 1 }}>Upper Middle-Class was gradually conscientised to give up their first languages and adopt foreign languages because of the benefits they expect to derive from them, power and economics. Made to believe their languages in public lack same functional load.</Typography>
-              <Typography component='div' className="sentencesans" sx={{ mt: 1 }}>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </Typography>
+              <Typography component='div' className="sentencesans" sx={{ mt: 1 }}>Upper Middle-Class was gradually conscientised to give up their First languages and adopt foreign languages because of the benefits they expect to derive from them, power and economics. Made to believe their languages in public lack same functional load.</Typography>
+              {/* <Typography component='div' className="sentencesans" sx={{ mt: 1 }}>. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . </Typography> */}
             </CardContent>
           </FullpageSection>
 
@@ -97,8 +97,8 @@ const App = () => {
             height: '45vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
-              <Typography component='div' className="colorized" sx={{ mt: 10 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance.<br />See, my tongue is a traumatized survivor…"<br /><br /><br />✎ HAFSAT ABDULLAHI
-              </Typography>
+              <Typography component='div' className="colorized" sx={{ mt: 10 }}>The tongue of African women is a traumatised survivor</Typography>
+              <Typography component='div' className="colorized" sx={{ mt: 3 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance"<br /><br />✎ HAFSAT ABDULLAHI</Typography>
             </CardContent>
           </FullpageSection>
 
@@ -109,29 +109,42 @@ const App = () => {
             <ReactPlayer width='100%' height='100%' controls url="https://www.alessandromusetta.com/geo/tiles/first-language/Hafsat_Abdullahi.mp4" />
           </FullpageSection>
 
-          <FullpageSection className="sentencetitleback" style={{
-            height: '70vh',
+          {/* <FullpageSection className="sentencetitleback" style={{
+            height: '100vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="sentencetitle" sx={{ mt: 10 }}>MAKING AUDIBLE WOMEN INAUDIBILITY</Typography>
               <BarChartNoText />
             </CardContent>
-          </FullpageSection>
+          </FullpageSection> */}
 
           <FullpageSection style={{
             height: '70vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="colorized" sx={{ mt: 10 }}>The written literary expressions by African women have been invisibilized, underrepresented, undocumented, and unhistoricized for long, particularly those in the First language</Typography>
-              <Typography component='div' className="colorized" sx={{ mt: 10 }}>Who are they and what is the legacy of women writing Africa in their First languages?</Typography>
+              <Typography component='div' className="sentencesans" sx={{ mt: 20 }}>Dra. Abena Busia, who together with Dra. Tuzyline Allan conceptualised the anthology Women Writing Africa</Typography>
+            </CardContent>
+          </FullpageSection>
+
+          <FullpageSection className="abena" style={{
+            height: '50vh',
+          }}>
+          </FullpageSection>
+
+          <FullpageSection style={{
+            height: '45vh',
+          }}>
+            <CardContent sx={{ maxWidth: 800 }}>
+              <Typography component='div' className="colorized" sx={{ mt: 10 }}>So, who are they and what is the legacy of women writing Africa in their First languages?<br />Help us give an answer and increase the collection of THE FIRST LANGUAGE OF WOMEN WRITING AFRICA </Typography>
             </CardContent>
           </FullpageSection>
 
           <FullpageSection className="sentencetitleback" style={{
-            height: '70vh',
+            height: '100vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
-              <Typography component='div' className="sentencetitle" sx={{ mt: 10 }}>THE COLLECTION</Typography>
+              <Typography component='div' className="sentencetitle" sx={{ mt: 10 }}>THE COLLECTION. MAKING AUDIBLE WOMEN INAUDIBILITY</Typography>
               <BarChartNoText />
             </CardContent>
           </FullpageSection>
@@ -157,8 +170,8 @@ const App = () => {
             <BarChart />
           </FullpageSection>
 
-          <FullpageSection style={{
-            height: '30vh',
+          <FullpageSection className="africalang" style={{
+            height: '100vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="colorized" sx={{ mt: 6 }}>A total of <CountUp
@@ -170,11 +183,11 @@ const App = () => {
             </CardContent>
           </FullpageSection>
 
-          <FullpageSection className="africalang" style={{
+          {/* <FullpageSection className="africalang" style={{
             height: '90vh',
             padding: '1em',
           }}>
-          </FullpageSection>
+          </FullpageSection> */}
 
           <FullpageSection style={{
             height: '100vh',

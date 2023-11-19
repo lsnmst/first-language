@@ -282,7 +282,15 @@ video{
   background-repeat: no-repeat;
   background-size: 40vw;
   background-attachment: fixed;
-  background-position: center center;
+  background-position: center bottom;
+}
+
+.abena {
+  background: url( "../public/abena_busia.jpg" ) no-repeat;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
+  background-position: left bottom;
 }
 
 .title {
