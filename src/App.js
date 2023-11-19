@@ -94,11 +94,12 @@ const App = () => {
           </FullpageSection>
 
           <FullpageSection style={{
-            height: '45vh',
+            height: '70vh',
           }}>
             <CardContent sx={{ maxWidth: 800 }}>
               <Typography component='div' className="colorized" sx={{ mt: 10 }}>The tongue of African women is a traumatised survivor</Typography>
-              <Typography component='div' className="colorized" sx={{ mt: 3 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance"<br /><br />✎ HAFSAT ABDULLAHI</Typography>
+              <Typography component='div' className="colorized" sx={{ mt: 5 }}>"My mouth is a battlefield!<br />A clash of unyielding cultures warring for dominance"<br /><br />✎ HAFSAT ABDULLAHI</Typography>
+              <Typography component='div' className="sentencesans" sx={{ mt: 10 }}>Video from Hafsat Abdullahi</Typography>
             </CardContent>
           </FullpageSection>
 
@@ -128,7 +129,7 @@ const App = () => {
           </FullpageSection>
 
           <FullpageSection className="abena" style={{
-            height: '50vh',
+            height: '70vh',
           }}>
           </FullpageSection>
 
