@@ -290,7 +290,7 @@ video{
   background-repeat: no-repeat;
   background-size: 100vw;
   background-attachment: fixed;
-  background-position: left bottom;
+  background-position: left top;
 }
 
 .title {
